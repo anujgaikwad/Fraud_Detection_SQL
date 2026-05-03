@@ -2,13 +2,11 @@
 
 **SQL-based risk scoring for banking transactions**
 
----
 
 ## Problem
 
 Banks process millions of transactions daily but lack a fast, lightweight way to flag suspicious activity. Most fraud is caught too late — after the money is gone. This project builds a rule-based detection system using pure SQL.
 
----
 
 ## Approach
 
@@ -18,7 +16,6 @@ Banks process millions of transactions daily but lack a fast, lightweight way to
 4. **Categorize risk** — HIGH (≥60), MEDIUM (≥30), LOW (<30)  
 5. **Visualize** — HTML dashboard with 4 charts
 
----
 
 ## Dataset
 
@@ -34,7 +31,7 @@ Banks process millions of transactions daily but lack a fast, lightweight way to
 
 6,000 rows · 600 customers · 9.3% fraud rate
 
----
+
 
 ## SQL Rules
 
@@ -47,7 +44,6 @@ Banks process millions of transactions daily but lack a fast, lightweight way to
 
 Score ≥ 60 → HIGH · Score 30–59 → MEDIUM · Score < 30 → LOW
 
----
 
 ## Key Results
 
@@ -57,31 +53,13 @@ Score ≥ 60 → HIGH · Score 30–59 → MEDIUM · Score < 30 → LOW
 - **Location mismatch** was the most triggered rule  
 - **Utilities & Gaming** categories had highest fraud rates
 
----
 
 ## Files
 
-```
 transactions.csv       — Dataset (6,000 rows)
 fraud_queries.sql      — All SQL queries
 fraud_dashboard.html   — Interactive dashboard
 fraud_detection.pptx   — 6-slide presentation
 README.md              — This file
-```
 
----
 
-## Resume Bullets
-
-- Built a SQL-based fraud detection system on 6,000+ transactions using CASE WHEN scoring logic, flagging 556 fraud cases (9.3%) across HIGH / MEDIUM / LOW risk tiers
-- Designed a multi-rule risk engine using CTEs combining amount thresholds, location mismatch, and international flags into a single composite risk score
-- Delivered end-to-end analytics pipeline from raw data to visual dashboard, reducing analyst review effort by isolating 51 HIGH-risk transactions out of 6,000
-
----
-
-## Stack
-
-- SQL (DuckDB / PostgreSQL compatible)
-- Python · Faker (data generation)
-- Chart.js (dashboard)
-- PptxGenJS (presentation)
