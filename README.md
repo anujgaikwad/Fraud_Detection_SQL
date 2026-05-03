@@ -62,4 +62,6 @@ fraud_dashboard.html   — Interactive dashboard
 fraud_detection.pptx   — 6-slide presentation
 README.md              — This file
 
-https://anujgaikwad.github.io/Fraud_Detection_SQL/
+
+🚀 Live Interactive Dashboard
+👉 Click here to explore the full interactive dashboard:: https://anujgaikwad.github.io/Fraud_Detection_SQL/
